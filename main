@@ -1,1 +1,7 @@
 print ("Polynom of what power do you want to compute?")
+
+
+class polynom_item:
+    def __init__(self, power, x_value):
+        self.power = power
+        self.x_value = x_value
