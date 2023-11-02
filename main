@@ -1,7 +1,15 @@
-print ("Polynom of what power do you want to compute?")
+power:int = 0
+
+while power == 0:
+    try:
+        power = int(input("Polynom of what power do you want to compute?"))
+    except:
+        print("Please enter a valid whole number between 1 and +infinity:")
+
+
 
 
 class polynom_item:
-    def __init__(self, power, x_value):
-        self.power = power
-        self.x_value = x_value
+    def __init__(self, pwr:float, x_val:float):
+        self.pwr = pwr
+        self.x_val = x_val
